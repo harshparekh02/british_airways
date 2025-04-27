@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Ticket</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('456.jpg') no-repeat center center fixed; /* Replace with your image name */
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .ticket {
+      background: rgba(255, 255, 255, 0.95); /* Light transparency to blend with background */
+      width: 400px;
+      backdrop-filter:blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      padding: 20px;
+      position: relative;
+    }
+
+    .ticket::before, .ticket::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 40px;
+      background: #f0f2f5;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .ticket::before {
+      left: -10px;
+    }
+
+    .ticket::after {
+      right: -10px;
+    }
+
+    .ticket-header {
+        font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .ticket-header h2 {
+      margin: 0;
+      color: #007bff;
+    }
+
+    .ticket-info {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .ticket-info span {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .ticket-footer {
+      text-align: center;
+      border-top: 2px dashed #ccc;
+      padding-top: 10px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <form action="tikect.html" method="post">
+<div class="ticket">
+  <div class="ticket-header">
+    <h2>BRITESH AIRWAYS</h2>
+    <div>Flight No: <span>KA123</span></div>
+  </div>
+
+  <div class="ticket-info">
+    <div>Passenger: <span>John Doe</span></div>
+    <div>Seat: <span>12A</span></div>
+    <div>From: <span>Delhi</span> ➡️ To: <span>Mumbai</span></div>
+    <div>Date: <span>2025-05-01</span></div>
+    <div>Time: <span>10:00 AM</span></div>
+  </div>
+
+  <div class="ticket-footer">
+    Thank you for choosing us! ✈️
+  </div>
+</div>
+
+</body>
+</html>
