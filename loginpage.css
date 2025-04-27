@@ -1,0 +1,56 @@
+/* Background image styling */
+body {
+  background-image: url("download.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* change 0.5 for lighter/darker effect */
+  z-index: -1;
+}
+
+/* Centered content box */
+.container {
+  background-color: rgba(185, 19, 19, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(121, 8, 8, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading style */
+h1 {
+  color: hsl(48, 98%, 52%);
+  font-weight: bold;
+}
+
+/* Button style */
+.btn-primary {
+  background-color: hsl(0, 98%, 52%);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* Input focus */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
